@@ -1,0 +1,154 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
+
+
+:root{
+    --fonte: 'Roboto Condensed', sans-serif;
+    --cor: #7BABC6;
+    --cor2: #316583;
+    --cinza-escuro: #181818;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #000000;
+    font-family: var(--fonte);
+    font-weight: 100;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tela{
+    padding: 1rem;
+    background-color: var(--cinza-escuro);
+    height: 35rem;
+    width: 17rem;
+    border-radius: 1rem;
+}
+
+.nav{
+    border-radius: .5rem;
+    padding: 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: .3rem;
+    font-size: 1rem;
+}
+
+.nomes{
+    color: #FFF;
+}
+
+.barra{
+    background-color: #FFF;
+    height: 1rem;
+    width: .15rem;
+    border-radius: .1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+header{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    height: 4rem;
+}
+
+.header__txt{
+    display: block;
+    justify-content: flex-start;
+    padding: 1rem 0 0 0;
+    font-style: italic;
+    color: var(--cor);
+    text-align: center;
+}
+
+
+.semana{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dia{
+    margin: .2rem;
+    color: #FFF;
+    background-color: var(--cor2);
+    height: 2.25rem;
+    width: 3rem;
+    display: block;
+}
+
+.dia__texto{
+    padding-top: .5rem;
+    text-align: center;
+}
+
+.container__tarefas{
+    display: block;
+}
+
+.tarefas{
+    display: flex;
+}
+
+.tarefa{
+    padding-top: .2rem;
+    text-align: center;
+    color: var(--cinza-escuro);
+    margin: .2rem .2rem;
+    height: 2.25rem;
+    width: 3rem;
+    display: flex;
+    font-size: 70%;
+}
+
+.ocupado{
+    background-color: var(--cor);
+}
+
+.vazio{
+    background-color: #303030;
+}
+
+.seta{
+    display: block;
+    cursor: pointer;
+}
+
+.voltar{
+    height: 1rem;
+    width: 1rem;
+    color: var(--cor);
+}
+
+.alert{
+    position: absolute;
+    padding: 2rem;
+    font-size: 3rem;
+    color: red;
+}
